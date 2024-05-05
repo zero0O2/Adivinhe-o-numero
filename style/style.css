@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+
+    --cor-0: #0D0D0D;
+    --cor-2: #736939;
+    --cor-3: #8DA1A6;
+    --cor-4: #586E73;
+    --cor-5: #2A3A40;
+
+    --font-0:'Outfit';
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:var(--cor-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ======== HEADER ======== */
+
+.header{
+    height: 80px;
+    width: 100%;
+    font-family: var(--font-0);
+    background-color: var(--cor-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 8px 0 10px rgba(0, 0, 0, 0.222);
+}
+
+.header .conteudo{
+    display: flex;
+    align-items: baseline;
+}
+
+.header .conteudo h1{
+    font-size: 35px;
+}
+
+.header .conteudo p{
+    display: flex;
+    font-size: 15px;
+    color: #1d1d1d;
+}
+
+.aside-conteudo{
+    min-width: 80%;
+    height: 400px;
+    margin: 100px 0 0 0;
+    display: flex;
+    gap: 10px;
+}
+
+/* ======= AREA DE ADIVINHAÇAO ======== */
+
+.area-adivinhacao{
+    background-color: #282d2f17;
+    padding: 20px 30px;
+    font-size: 20px;
+    min-width: 300px;
+}
+
+.area-adivinhacao p{
+    width: 240px;
+    margin-top: 10px;
+
+}
+
+.area-adivinhacao button{
+    font-size: 15px;
+    border: 3px solid #0e1113;
+    outline: none;
+    background-color: #0d0d0d24;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    margin-top: 60px;
+    width: 100%;
+    height: 40px;
+    transition: all .2s;
+}
+.area-adivinhacao button:hover{
+    cursor: pointer;
+    background-color: #0d0d0d5f;
+}
+
+
+
+
+
+/* ======= AREA DE RESULTADO ======== */
+
+.area-resultado{
+    background-color: #1d1d1d;
+    padding: 20px 30px;
+    width: 75%;
+    animation: area-resultado 3s alternate;
+    overflow: hidden;
+    color: white;
+    
+}
+
+
+
+
+.area-resultado div{
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.area-resultado div p{
+    margin-top: 8px;
+}
+.area-resultado div p strong{
+    font-weight: 700px;
+}
+
+.area-resultado div::-webkit-scrollbar{
+    width: 14px;
+    background-color: black;
+}
+
+.area-resultado div::-webkit-scrollbar-thumb{
+    background-color: #564e2bca;
+}
+
+
+
+
+@keyframes area-resultado{
+    0%{
+        width: 0%; 
+    }
+    20%{
+        width: 0%; 
+    }
+    100%{
+        width: 75%;
+    }
+}
