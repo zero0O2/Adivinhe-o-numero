@@ -1,6 +1,6 @@
 let button = document.getElementById('button');
 let resultado = document.getElementById('resultado');
-let numeroAleatorio = Number.parseInt(Math.random() * 100)
+let numeroAleatorio = Number.parseInt(Math.random() * 1000000)
 resultado.innerHTML = ''
 
 button.addEventListener('click',function(){
