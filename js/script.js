@@ -2,7 +2,6 @@ let button = document.getElementById('button');
 let resultado = document.getElementById('resultado');
 let numeroAleatorio = Number.parseInt(Math.random() * 100)
 resultado.innerHTML = ''
-console.log(numeroAleatorio)
 
 button.addEventListener('click',function(){
     let numeroJogador = Number(prompt('Digite seu palpite :'))
