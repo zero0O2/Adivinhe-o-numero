@@ -5,7 +5,7 @@ let tentativas = document.getElementById('tentativas');
 let contagem = 0
 resultado.innerHTML = ''
 
-button.addEventListener('click',function(){
+button.addEventListener('click',() => {
     let numeroJogador = Number(prompt('Digite seu palpite :'));
     contagem += 1
     if(Number.isNaN(numeroJogador) == true){
