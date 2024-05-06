@@ -16,7 +16,7 @@ button.addEventListener('click',function(){
         if(numeroJogador > numeroAleatorio){resultado.innerHTML += `<p>Meu número é <strong>menor</strong> que ${numeroJogador} <br></p>`};
     }else {
         resultado.innerHTML += `<p>PARABÉNS!!!,voce acertou,meu numero era <strong>${numeroJogador}</strong></p>`;
-        tentativas.innerHTML = `Numero de tentativas: ${contagem}`;
+        tentativas.innerHTML = `Numero de tentativas: <strong>${contagem}</strong>`;
         button.style.display = 'none';
     };
 });
