@@ -13,5 +13,8 @@ button.addEventListener('click',function(){
     }else if (numeroJogador != numeroAleatorio){
         if(numeroJogador < numeroAleatorio){resultado.innerHTML += `<p>Meu número é <strong>maior</strong> que ${numeroJogador} <br></p>`}
         if(numeroJogador > numeroAleatorio){resultado.innerHTML += `<p>Meu número é <strong>menor</strong> que ${numeroJogador} <br></p>`}
-    }else {resultado.innerHTML += `<p>PARABÉNS,meu numero era <strong>${numeroJogador}</strong> seu numero tentativas foram ${contagem}</p>`}
+    }else {
+        resultado.innerHTML += `<p>PARABÉNS,meu numero era <strong>${numeroJogador}</strong> seu numero tentativas foram ${contagem}</p>`
+        button.style.display = 'none'
+    }
 });
