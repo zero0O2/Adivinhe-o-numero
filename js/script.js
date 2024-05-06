@@ -1,6 +1,6 @@
 let button = document.getElementById('button');
 let resultado = document.getElementById('resultado');
-let numeroAleatorio = Number.parseInt(Math.random() * 1000)
+let numeroAleatorio = Number.parseInt(Math.random() * 100)
 let contagem = 0
 resultado.innerHTML = ''
 
